@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -6,17 +8,17 @@ public class Main {
         ContaCorrente julia = new ContaCorrente();
         julia.ler();
 
-        if(douglas.sacar(1000)){
-            douglas.mostraSaldo();
-        }else{
-            System.out.println("Opa, pegue um emprestimo na FACTA");
-        }
+        ArrayList<ContaCorrente> banco= new ArrayList<>();
 
-       if (julia.sacar(500)){
-           System.out.println(julia.toString());
-       }else{
-           System.out.println("Errro");
-       }
+        banco.add(douglas);
+        banco.add(0,julia);
+        banco.remove(douglas);
+        banco.remove(0);
+        banco.size();
+        banco.contains(julia);
+        banco.indexOf(julia);
+        banco.isEmpty();
+        banco.get(0);
 
     }
 }

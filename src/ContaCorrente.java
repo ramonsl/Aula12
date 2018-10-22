@@ -8,6 +8,14 @@ public class ContaCorrente {
     private double limite;
     private int numeroConta;
 
+    public ContaCorrente(){
+        System.out.println("Criando Conta");
+    }
+
+    public ContaCorrente(Cliente titular){
+        System.out.println("Criando Conta");
+    }
+
     public void ler(){
         Scanner tc = new Scanner(System.in);
         System.out.println("Digite o  numero:");

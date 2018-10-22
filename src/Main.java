@@ -15,7 +15,7 @@ public class Main {
        if (julia.sacar(500)){
            System.out.println(julia.toString());
        }else{
-           System.out.println("OPS");
+           System.out.println("Errro");
        }
 
     }
